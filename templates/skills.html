@@ -3,29 +3,28 @@
 <article class="content-article links-page">
   <main class="article-content">
     <div class="article-header">
-      <h1 class="heading">Links</h1>
+      <h1 class="heading">{{ page.title }}</h1>
     </div>
 
     {% if page.extra.show_content %} {{ page.content | safe }} {% endif %} {%
-    set links_data = load_data(path="data/links.toml") %} {% for group in
-    links_data.groups %}
+    set skills_data = load_data(path="data/skills.toml") %} {% for group in
+    skills_data.groups %}
     <div class="links-group">
       <h2 class="group-title">{{ group.name }}</h2>
-      <div class="group-desc">{{ group.desc | markdown | safe }}</div>
-      <div class="friends-list">
+      <div class="skills-list">
         {% for item in group.items %}
         <a
           href="{{ item.url }}"
           target="_blank"
           rel="noopener noreferrer"
-          class="friend-item"
+          class="skill-item"
         >
-          <div class="friend-avatar">
+          <div class="skill-avatar">
             <img src="{{ item.avatar }}" alt="{{ item.name }}" />
           </div>
-          <div class="friend-info">
-            <div class="friend-name">{{ item.name }}</div>
-            <div class="friend-desc">{{ item.description }}</div>
+          <div class="skill-info">
+            <div class="skill-name">{{ item.name }}</div>
+            <div class="skill-desc">{{ item.description }}</div>
           </div>
         </a>
         {% endfor %}
