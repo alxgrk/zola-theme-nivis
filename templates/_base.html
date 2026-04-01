@@ -17,7 +17,7 @@
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/8.5.10/mmenu.min.css">
   <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
   {% if config.extra.math_display == "mathjax" %}
   <script>
@@ -92,7 +92,7 @@
         {% if config.extra.avatar %}
         <div class="avatar">
           {% set avatar_img = resize_image(path=config.extra.avatar, width=512, height=512, op="fill", format="webp", quality=100) %}
-          <img src="{{ avatar_img.url }}" alt="avatar" width="512" height="512" fetchpriority="high" loading="eager">
+          <img src="{{ avatar_img.url }}" alt="avatar" width="512" height="512">
         </div>
         {% endif %}
         <div class="title">
