@@ -2395,7 +2395,7 @@ sup.footnote-reference {
             margin: 0 auto 20px auto; // Match sidebar margin
             border-radius: 50%;
             overflow: hidden;
-            animation: fadeInDown 0.2s ease-out;
+            animation: fadeInDown 0.1s ease-out;
             
             img {
                 width: 100%;
@@ -2410,7 +2410,7 @@ sup.footnote-reference {
         }
 
         .title {
-            animation: fadeInDown 0.2s ease-out 0.2s backwards;
+            animation: fadeInDown 0.1s ease-out 0.2s backwards;
 
             h3 {
                 text-align: center;
@@ -2443,7 +2443,7 @@ sup.footnote-reference {
             margin-top: 2em;
             margin-bottom: 0;
             display: block; // Reset flex
-            animation: fadeInDown 0.2s ease-out 0.4s backwards;
+            animation: fadeInDown 0.1s ease-out 0.4s backwards;
 
             li {
                 display: inline-block;
@@ -2476,7 +2476,7 @@ sup.footnote-reference {
             flex-wrap: wrap;
             justify-content: center;
             position: relative;
-            animation: fadeIn 0.3s ease-out 0.6s backwards;
+            animation: fadeIn 0.1s ease-out 0.6s backwards;
 
             // Separator Line
             &::before {
@@ -2847,6 +2847,3 @@ sup.footnote-reference {
         }
     }
 }
-
-@import url("giallo-dark.css") (prefers-color-scheme: dark);
-@import url("giallo-light.css") (prefers-color-scheme: light);
