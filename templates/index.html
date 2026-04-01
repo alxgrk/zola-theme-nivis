@@ -17,8 +17,8 @@
       <div class="title-inner">
         {% if config.extra.avatar %}
         <div class="avatar">
-          {% set avatar_img = resize_image(path=config.extra.avatar, width=512, height=512, op="fill", format="webp", quality=80) %}
-          <img src="{{ avatar_img.url }}" alt="avatar" width="512" height="512" fetchpriority="high" loading="eager">
+          {% set avatar_img = resize_image(path=config.extra.avatar, width=384, height=384, op="fill", format="webp", quality=80) %}
+          <img src="{{ avatar_img.url }}" alt="avatar" width="384" height="384" fetchpriority="high" loading="eager">
         </div>
         {% endif %}
         <div class="title">
